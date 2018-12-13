@@ -12,52 +12,20 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/style.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/full-width-pics.css" rel="stylesheet">
   <style media="screen">
-  .line {
-    /* display:inline-block; */
-    border: 1px solid #ccc;
-    margin: 10px;
-    padding: 10px;   background:url('/images/line.png');
-    background-size:100% 100%;
-  }
-  .background {
-    /* width: 100px; */
-    height: 75px;
-    padding: 0;
-    margin: 0;
-  }
-
-  .bottom {
-    position: absolute;
-    bottom: 1px;
-    left: 10px;
-  }
-
-  .top {
-    position: absolute;
-    top: 11px;
-    right: 10px;
-  }
-  .background>div {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  }
-  .table th {
-   text-align: center;
-   vertical-align: middle;
-  }
-
-  .table td {
-    vertical-align: middle;
-    text-align: center;
-  }
-
+    .cost {
+      color: #d9534f;
+      font-weight: bold;
+      border-color: #000;
+      border: 1px;
+    }
+    .half {
+      width: 10%;
+    }
   </style>
 </head>
 
@@ -125,51 +93,81 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row" rowspan="2" class="text-light">1</th>
-            <div><td rowspan="2"></td><td>6</td></div>
-            <td rowspan="2"></td><td>7</td>
-            <td rowspan="2"></td><td>10</td>
-            <td rowspan="2">150</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row" rowspan="2" class="text-light">2</th>
-            <div><td rowspan="2"></td><td>7</td></div>
-            <td rowspan="2"></td><td>11</td>
-            <td rowspan="2"></td><td>11</td>
-            <td rowspan="2">175</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th scope="row" class="text-light">1</th>
+
+            <div>
+              <td class=""></td>
+              <td class="cost">6</td>
+            </div>
+
+            <div>
+              <td></td>
+              <td class="cost">7</td>
+            </div>
+
+            <div>
+              <td></td>
+              <td class="cost">7</td>
+            </div>
+
+            <td>150</td>
           </tr>
 
           <tr>
-            <th scope="row" rowspan="2" class="text-light">3</th>
-            <div><td rowspan="2"></td><td>4</td></div>
-            <td rowspan="2"></td><td>5</td>
-            <td rowspan="2"></td><td>12</td>
-            <td rowspan="2">275</td>
+            <th scope="row" class="text-light">2</th>
+
+            <div>
+              <td class="half"></td>
+              <td class="cost half">7</td>
+            </div>
+
+            <div>
+              <td class="half"></td>
+              <td class="cost half">11</td>
+            </div>
+
+            <div>
+              <td class="half"></td>
+              <td class="cost half">11</td>
+            </div>
+
+            <td>175</td>
           </tr>
+
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th scope="row" class="text-light">3</th>
+
+            <div>
+              <td class="half"></td>
+              <td class="cost half">4</td>
+            </div>
+
+            <div>
+              <td class="half"></td>
+              <td class="cost half">5</td>
+            </div>
+
+            <div>
+              <td class="half"></td>
+              <td class="cost half">12</td>
+            </div>
+
+            <td>275</td>
           </tr>
+
+
 
           <tr>
             <th scope="row" class="text-light">Demand</th>
             <td colspan="2">200</td>
             <td colspan="2">100</td>
             <td colspan="2">300</td>
-            <td class="bg-warning">600</td>
+            <td colspan="2" class="bg-warning font-weight-bold">600</td>
           </tr>
+
         </tbody>
+      </table>
+      </tbody>
       </table>
     </div>
   </section>
