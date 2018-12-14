@@ -23,6 +23,7 @@
   top: 11px;
   right: 10px;
 }
+
 .background>div {
 position: relative;
 height: 100%;
@@ -45,19 +46,62 @@ left: 0;
   font-weight: bold;
   border-color: #000;
   border: 1px;
-  -webkit-animation: glow 2s ease-in-out infinite alternate;
-  -moz-animation: glow 2s ease-in-out infinite alternate;
-  animation: glow 2s ease-in-out infinite alternate;
 }
 .half {
   width: 10%;
 }
 
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #e60073, 0 0 10px #e60073, 0 0 10px #e60073, 0 0 10px #e60073, 0 0 10px #e60073;
-  }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 20px #ff4da6, 0 0 20px #ff4da6, 0 0 20px #ff4da6, 0 0 20px #ff4da6, 0 0 20px #ff4da6, 0 0 20px #ff4da6;
-  }
+
+.highlight {
+  background-color: aquamarine;
+  color:#000;
+  transition: 1s;
+}
+
+.highlight2{
+  background-color: blueviolet;
+  color: #fff;
+  transition: 1s;
+}
+
+.highlight3{
+  transition: 1s;
+}
+
+.popout {
+  animation: popout 1s ease-out;
+  -webkit-animation: popout 1s ease-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.popin {
+  animation: popin 1s ease-out;
+  -webkit-animation: popin 1s ease-out;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+.transitions {
+  transition: 1s;
+}
+
+@keyframes popout {
+    from{transform:scale(1)}
+    to{transform:scale(1.25)}
+}
+
+@-webkit-keyframes popout {
+    from{transform:scale(1)}
+    to{transform:scale(1.25)}
+}
+
+@keyframes popin {
+    from{transform:scale(1.25)}
+    to{transform:scale(1)}
+}
+
+@-webkit-keyframes popin {
+    from{transform:scale(1.25)}
+    to{transform:scale(1)}
 }
